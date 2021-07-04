@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { Client, Location } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
+// const qrcode = require('qrcode-terminal');
 
 const SESSION_FILE_PATH = './session.json';
 let sessionCfg;
@@ -13,15 +13,9 @@ const client = new Client({ puppeteer: { headless: false }, session: sessionCfg 
 client.initialize();
 
 client.on('qr', (qr) => {
-    // Generate and scan this code with your phone
+    // NOTE: This event will not be fired if a session is specified.
     // console.log('QR RECEIVED', qr);
-    qrcode.generate(qr,{small: true});
-});
-
-client.on('qr', (qr) => {
-    // Generate and scan this code with your phone
-    // console.log('QR RECEIVED', qr);
-    qrcode.generate(qr,{small: true});
+    // qrcode.generate(qr,{small: true});
 });
 
 client.on('authenticated', (session) => {
@@ -35,6 +29,7 @@ client.on('authenticated', (session) => {
 });
 
 client.on('auth_failure', msg => {
+    // Fired if session restore was unsuccessfull
     console.error('AUTHENTICATION FAILURE', msg);
 });
 

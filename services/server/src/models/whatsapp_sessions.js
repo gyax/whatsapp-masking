@@ -1,26 +1,35 @@
 const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-    class settings extends Model {
+    class whatsapp_session extends Model {
 
     };
-    settings.init({
+    whatsapp_session.init({
         id: {
             primaryKey: true,
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV4,
             allowNull: false
         },
-        user_subscribe_id: {
-            type: DataTypes.UUID,
+        title: {
+            type: DataTypes.TEXT,
             allowNull: false
         },
-        value_setting: {
-            type: DataTypes.TEXT,
+        phone_number: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        status: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false,
+            allowNull: false
+        },
+        session: {
+            type: DataTypes.JSON,
             allowNull: true
         }
     }, {
         sequelize,
-        modelName: 'settings',
+        modelName: 'whatsapp_session',
     });
-    return settings;
+    return whatsapp_session;
 };
