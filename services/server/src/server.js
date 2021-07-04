@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require('cors');
 const SequelizeInit = require("./models");
-
+const Whatsapp = require("./whatsapp")
 const environments = require("./configs/environments");
 
 const { sequelize } = SequelizeInit({
@@ -27,8 +27,10 @@ app.listen(environments.app_port || 5000, async () =>{
             force: process.env.DB_FORCE || false
         });
         await sequelize.authenticate();
+        await Whatsapp({whatsapp_session_id: "954b6f31-838e-4ca0-a0d4-e2cbe5693a15"}, sequelize);
         console.log(`Server Jalan di Port ${environments.app_port || 5000}`)
     }catch (e) {
+        console.log(e)
         console.log("Error")
     }
 });
