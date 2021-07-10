@@ -85,6 +85,11 @@ module.exports = async ({whatsapp_session_id}, db) => {
             mentionedIds: msg.mentionedIds,
             vCards: msg.vCards
         }, db)
+        // if(msg.hasMedia) {
+        //     const media = await msg.downloadMedia();
+        //     // do something with the media data here
+        //     console.log(media)
+        // }
     })
 
     // Initialize Whatsapp

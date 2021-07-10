@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         // Tipe Messege
         type: {
-            type: DataTypes.ENUM("chat", "location", "image", "document", "multi_vcard", "vcard", "audio")
+            type: DataTypes.ENUM("chat", "location", "image", "document", "multi_vcard", "vcard", "audio", "video")
         },
         // Timestamp Pengiriman (Waktu Pengiriman)
         timestamp: {
