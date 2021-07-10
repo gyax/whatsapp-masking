@@ -20,7 +20,7 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.4",
     "uuid": "^8.3.2",
-    "whatsapp-web.js": "^1.12.6"
+    "whatsapp-web.js": "^1.13.2"
   },
   "devDependencies": {
     "jest": "^27.0.6",

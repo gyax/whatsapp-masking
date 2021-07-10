@@ -1,5 +1,6 @@
 const { Client } = require('whatsapp-web.js');
 const {GetSession, SetSession, SetQRCode, SuccessAuthentication, ClearAuth, ChangeBattery, ChangeState} = require("../repositories/whatsapp_sessions")
+const repo_message = require("../repositories/whatsapp_message")
 
 module.exports = async ({whatsapp_session_id}, db) => {
 
@@ -63,6 +64,28 @@ module.exports = async ({whatsapp_session_id}, db) => {
         // Menginitialize Kembali
         await client.initialize();
     });
+
+    await client.on('message', async (msg) => {
+        await repo_message.AddReceiveMessage({
+            whatsappId: msg.id.id,
+            from: msg.from,
+            to: msg.to,
+            hashMedia: msg.hasMedia,
+            type: msg.type,
+            timestamp: msg.timestamp,
+            body: msg.body,
+            mediaKey: msg.mediaKey,
+            isForwarded: msg.isForwarded,
+            isStatus: msg.isStatus,
+            isStarred: msg.isStarred,
+            broadcast: msg.broadcast,
+            hasQuotedMsg: msg.hasQuotedMsg,
+            fromMe: msg.fromMe,
+            links: msg.links,
+            mentionedIds: msg.mentionedIds,
+            vCards: msg.vCards
+        }, db)
+    })
 
     // Initialize Whatsapp
     await client.initialize();

@@ -1,0 +1,26 @@
+{
+  "id": {
+    "fromMe": false,
+    "remote": "6281218564200@c.us",
+    "id": "8E364D50035AA2CC0C2B2686893007F4",
+    "_serialized": "false_6281218564200@c.us_8E364D50035AA2CC0C2B2686893007F4"
+  },
+  "ack": 0,
+  "hasMedia": false,
+  "body": "BEGIN:VCARD\nVERSION:3.0\nN:New;Gilang;;;\nFN:Gilang New\nitem1.TEL;waid=6281218564200:+62 812-1856-4200\nitem1.X-ABLabel:Mobile\nEND:VCARD",
+  "type": "vcard",
+  "timestamp": 1625406981,
+  "from": "6281218564200@c.us",
+  "to": "6288220192673@c.us",
+  "isForwarded": false,
+  "isStatus": false,
+  "isStarred": false,
+  "broadcast": false,
+  "fromMe": false,
+  "hasQuotedMsg": false,
+  "vCards": [
+    "BEGIN:VCARD\nVERSION:3.0\nN:New;Gilang;;;\nFN:Gilang New\nitem1.TEL;waid=6281218564200:+62 812-1856-4200\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+  ],
+  "mentionedIds": [],
+  "links": []
+}

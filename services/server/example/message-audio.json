@@ -1,0 +1,25 @@
+{
+  "mediaKey": "pmQSRDQ5v1PT4pSt3lvF8SbMyh1DbO6imNg0BBpZnUI=",
+  "id": {
+    "fromMe": false,
+    "remote": "6281218564200@c.us",
+    "id": "79342CABB7D36B397089CECE182CFFCC",
+    "_serialized": "false_6281218564200@c.us_79342CABB7D36B397089CECE182CFFCC"
+  },
+  "ack": 0,
+  "hasMedia": true,
+  "body": "",
+  "type": "audio",
+  "timestamp": 1625406702,
+  "from": "6281218564200@c.us",
+  "to": "6288220192673@c.us",
+  "isForwarded": false,
+  "isStatus": false,
+  "isStarred": false,
+  "broadcast": false,
+  "fromMe": false,
+  "hasQuotedMsg": false,
+  "vCards": [],
+  "mentionedIds": [],
+  "links": []
+}

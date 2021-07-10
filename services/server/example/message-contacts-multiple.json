@@ -1,0 +1,27 @@
+{
+  "id": {
+    "fromMe": false,
+    "remote": "6281218564200@c.us",
+    "id": "9FA10F652EC396DFE5FBBAD73FD3F1ED",
+    "_serialized": "false_6281218564200@c.us_9FA10F652EC396DFE5FBBAD73FD3F1ED"
+  },
+  "ack": 0,
+  "hasMedia": false,
+  "body": "",
+  "type": "multi_vcard",
+  "timestamp": 1625407244,
+  "from": "6281218564200@c.us",
+  "to": "6288220192673@c.us",
+  "isForwarded": false,
+  "isStatus": false,
+  "isStarred": false,
+  "broadcast": false,
+  "fromMe": false,
+  "hasQuotedMsg": false,
+  "vCards": [
+    "BEGIN:VCARD\nVERSION:3.0\nN:;Agus;;;\nFN:Agus\nitem1.TEL:+1 (919) 626-4149\nitem1.X-ABLabel:Mobile\nEND:VCARD",
+    "BEGIN:VCARD\nVERSION:3.0\nN:;Aji;;;\nFN:Aji\nitem1.TEL:+62 896-3296-6894\nitem1.X-ABLabel:Mobile\nitem2.TEL;waid=6288215232534:+62 882-1523-2534\nitem2.X-ABLabel:Mobile\nitem3.TEL:+62 895-3468-65878\nitem3.X-ABLabel:Mobile\nitem4.TEL:+62 831-0467-6594\nitem4.X-ABLabel:Mobile\nEND:VCARD"
+  ],
+  "mentionedIds": [],
+  "links": []
+}
